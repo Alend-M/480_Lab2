@@ -9,7 +9,7 @@ private:
 
 public:
     // Constructor
-    Rectangle(const char* name, double x, double y, double side_a, double side_b);
+    Rectangle(double x, double y, double side_a, double side_b, const char* name);
 
     // Area calculation
     double area() const ;
@@ -21,7 +21,8 @@ public:
     double getSideB() const;
 
     // Setters
-    void setSideB(double newSideB);
+    void set_side_b(double newSideB);
+    void set_side_a(double newSideA);
 
     // Display function
     void display() const;

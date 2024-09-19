@@ -3,8 +3,8 @@
 #include <iomanip>
 
 // Constructor
-Rectangle::Rectangle(const char* name, double x, double y, double side_a, double side_b)
-: Square(name, x, y, side_a){
+Rectangle::Rectangle(double x, double y, double side_a, double side_b, const char* name)
+: Square(x, y, side_a, name){
     side_b = side_b;
 }
 
@@ -24,13 +24,19 @@ double Rectangle::getSideB() const {
 }
 
 // Setter for side_b
-void Rectangle::setSideB(double newSideB) {
+void Rectangle::set_side_b(double newSideB) {
     side_b = newSideB;
 }
 
+// Setter for side_a
+void Rectangle::set_side_a(double newSideA) {
+    setSideA(newSideA);
+}
+
+
 // Display function
 void Rectangle::display() const {
-    std::cout << "Rectangle Name:"<< getName() << std::endl;
+    std::cout << "\n" <<"Rectangle Name: "<< getName() << std::endl;
     std::cout << std::fixed << std::setprecision(2);
     std::cout << "X-coordinate: " << getOrigin().getx() << "\n";
     std::cout << "Y-coordinate: " << getOrigin().gety() << "\n";

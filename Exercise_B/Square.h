@@ -9,7 +9,7 @@ private:
 
 public:
     // Constructor
-    Square(const char* name, double x, double y, double side);
+    Square(double x, double y, double side, const char* name);
 
     // Member functions
     double area() const;

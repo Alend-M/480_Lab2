@@ -4,7 +4,7 @@
 #include <iomanip>
 
 // Constructor
-Square::Square(const char* name, double x, double y, double side): Shape(name, x, y) {
+Square::Square( double x, double y, double side, const char* name): Shape(name, x, y) {
     side_a = side; 
 }
 
