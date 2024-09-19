@@ -20,12 +20,24 @@ Point::~Point() {
     count--;
 }
 
+// Getters
+double Point::getx() const { return x;}
+double Point::gety() const { return y; }
+int Point::getId() const { return id; }
+
+// Setters
+void Point::setx(double x) { this->x = x; }
+void Point::sety(double y) { this->y = y; }
+
 // Display function
 void Point::display() const {
     std::cout << std::fixed << std::setprecision(2);
     std::cout << "X-coordinate: " << std::setw(8) << x << std::endl;
     std::cout << "Y-coordinate: " << std::setw(8) << y << std::endl;
 }
+
+// counter function
+int Point::counter() { return count; }
 
 // Member function to calculate distance
 double Point::distance(const Point& other) const {

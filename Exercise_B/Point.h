@@ -17,17 +17,17 @@ public:
     ~Point();
 
     // Getters
-    double getX() const { return x; }
-    double getY() const { return y; }
-    int getId() const { return id; }
+    double getx() const;
+    double gety() const;
+    int getId() const;
 
     // Setters
-    void setX(double x) { this->x = x; }
-    void setY(double y) { this->y = y; }
+    void setx(double x);
+    void sety(double y);
 
     // Member functions
     void display() const;
-    static int counter() { return count; }
+    static int counter();
 
     // Distance functions
     double distance(const Point& other) const;
