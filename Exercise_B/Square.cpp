@@ -1,5 +1,6 @@
 #include "square.h"
 #include "Shape.h"
+#include <iostream>
 #include <iomanip>
 
 // Constructor
@@ -31,8 +32,8 @@ void Square::setSideA(double side) {
 void Square::display() const {
     std::cout << "Square Name: " << getName() << "\n";
     std::cout << std::fixed << std::setprecision(2);
-    std::cout << "X-coordinate: " << getOrigin().getX() << "\n";
-    std::cout << "Y-coordinate: " << getOrigin().getY() << "\n";
+    std::cout << "X-coordinate: " << getOrigin().getx() << "\n";
+    std::cout << "Y-coordinate: " << getOrigin().gety() << "\n";
     std::cout << "Side a: " << side_a << "\n";
     std::cout << "Area: " << area() << "\n";
     std::cout << "Perimeter: " << perimeter() << "\n";

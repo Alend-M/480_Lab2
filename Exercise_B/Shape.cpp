@@ -29,14 +29,14 @@ const char* Shape::getName() const {
 void Shape::display() const {
     std::cout << "Shape Name: " << shapeName << std::endl;
     std::cout << std::fixed << std::setprecision(2);
-    std::cout << "X-coordinate: " << std::setw(8) << origin.getX() << std::endl;
-    std::cout << "Y-coordinate: " << std::setw(8) << origin.getY() << std::endl;
+    std::cout << "X-coordinate: " << std::setw(8) << origin.getx() << std::endl;
+    std::cout << "Y-coordinate: " << std::setw(8) << origin.gety() << std::endl;
 }
 
 // Move function
 void Shape::move(double dx, double dy) {
-    origin.setX(origin.getX() + dx);
-    origin.setY(origin.getY() + dy);
+    origin.setx(origin.getx() + dx);
+    origin.sety(origin.gety() + dy);
 }
 
 // Distance function 

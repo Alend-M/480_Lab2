@@ -18,14 +18,14 @@ void GraphicsWorld::run() {
     #endif // end of block to test Point
 
     // Test Square class
-    #if 0 // Change 0 to 1 to test Square
+    #if 1 // Change 0 to 1 to test Square
     std::cout << "\n\nTesting Functions in class Square:" << std::endl;
     Square s(5, 7, 12, "SQUARE - S");
     s.display();
     #endif // end of block to test Square
 
     // Test Rectangle class
-    #if 0 // Change 0 to 1 to test Rectangle
+    #if 1 // Change 0 to 1 to test Rectangle
     std::cout << "\nTesting Functions in class Rectangle:";
     Rectangle a(5, 7, 12, 15, "RECTANGLE A");
     a.display();
@@ -69,7 +69,7 @@ void GraphicsWorld::run() {
     #endif // end of block to test Rectangle
 
     // Test array of pointers and polymorphism
-    #if 0 // Change 0 to 1 to test using array of pointer and polymorphism
+    #if 1 // Change 0 to 1 to test using array of pointer and polymorphism
     std::cout << "\nTesting array of pointers and polymorphism:" << std::endl;
     Shape* sh[4];
     sh[0] = &s;
