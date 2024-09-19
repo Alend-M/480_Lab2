@@ -1,6 +1,6 @@
 #include "graphicsWorld.h"
 #include <iostream>
-// Include other necessary headers here, such as "Point.h", "Square.h", "Rectangle.h", etc.
+
 
 void GraphicsWorld::run() {
     // Display author information
@@ -25,7 +25,7 @@ void GraphicsWorld::run() {
     #endif // end of block to test Square
 
     // Test Rectangle class
-    #if 1 // Change 0 to 1 to test Rectangle
+    #if 0 // Change 0 to 1 to test Rectangle
     std::cout << "\nTesting Functions in class Rectangle:";
     Rectangle a(5, 7, 12, 15, "RECTANGLE A");
     a.display();
@@ -69,7 +69,7 @@ void GraphicsWorld::run() {
     #endif // end of block to test Rectangle
 
     // Test array of pointers and polymorphism
-    #if 1 // Change 0 to 1 to test using array of pointer and polymorphism
+    #if 0 // Change 0 to 1 to test using array of pointer and polymorphism
     std::cout << "\nTesting array of pointers and polymorphism:" << std::endl;
     Shape* sh[4];
     sh[0] = &s;

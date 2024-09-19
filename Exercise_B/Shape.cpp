@@ -12,6 +12,7 @@ Shape::Shape(const char* name, double x, double y) : origin(x, y) {
 // Destructor
 Shape::~Shape() {
     delete[] shapeName;
+    shapeName = nullptr;
 }
 
 

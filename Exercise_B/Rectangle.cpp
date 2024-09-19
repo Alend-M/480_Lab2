@@ -5,7 +5,7 @@
 // Constructor
 Rectangle::Rectangle(double x, double y, double side_a, double side_b, const char* name)
 : Square(x, y, side_a, name){
-    side_b = side_b;
+    this->side_b = side_b;
 }
 
 // Area calculation
